@@ -34,7 +34,7 @@
         <div class="mt-5"><br><br></div>
         <div class="card col-4 mt-5 text-primary border border-primary">
         <h5 class="card-header text-dark fw-bold "><center><?php echo $nama;?></center></h5>
-        <div class="card-body">
+        <div class="card-body fs-4">
         <center><h3>STRUCK</h3></center>
         <table>
 
@@ -205,9 +205,9 @@
 
         echo "
                 <tr>
-                <td>Gaji Bersih</td>
+                <td class='fw-bold fs-4'>Gaji Bersih</td>
                 <td>:</td>
-                <td> Rp ." . number_format($gajibersih) . "</td>
+                <td class='fw-bold fs-4'> Rp ." . number_format($gajibersih) . "</td>
                 </tr>";
 
 
