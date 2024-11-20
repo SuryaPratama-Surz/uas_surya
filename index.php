@@ -58,7 +58,7 @@
             <td class='ps-5'>
                <h4 class="pt-4 ps-5"><i>Gaji</i></h4>
             </td>
-            <td class='ps-3'>
+            <td class='text-center'>
                <h4 class="pt-4 ps-5"><i>Potongan</i></h4>
             </td>
         </tr>
@@ -90,7 +90,7 @@
         </tr>
         <tr>
             <td class='ps-3'>Status Kerja</td>
-            <td class="ps-2">Tabungan</td>
+            <td class="ps-2">Cicilan</td>
         </tr>
         <tr>
             <td class='ps-3'>

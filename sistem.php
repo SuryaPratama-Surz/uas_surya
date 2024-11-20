@@ -168,32 +168,40 @@
         <td>Pinjaman</td>
         <td>:</td>
         <td> Rp. " . number_format($pinjaman). "</td>
-        </tr>
-         <tr>
-        <td>Infaq</td>
-        <td>:</td>
-        <td> Rp. " . number_format($lainnya). "</td>
         </tr>";
 
+        
+        $jabatan = $_POST['jabatan'];
 
-            $jabatan = $_POST['jabatan'];
-
-            if ($jabatan == "Kepala Sekolah") {
-                $gaji = 10000000;
-            } elseif ($jabatan == "Wakasek") {
-                $gaji = 7000000;
-            } elseif ($jabatan == "Guru") {
-               $gaji = 5000000;
-            } elseif ($jabatan == "Karyawan") {
-               $gaji = 2500000;
-            } else {
-                $gaji = 0;
-            }
+        if ($jabatan == "Kepala Sekolah") {
+            $gaji = 10000000;
+        } elseif ($jabatan == "Wakasek") {
+            $gaji = 7000000;
+        } elseif ($jabatan == "Guru") {
+           $gaji = 5000000;
+        } elseif ($jabatan == "Karyawan") {
+           $gaji = 2500000;
+        } else {
+            $gaji = 0;
+        }
 
         $cicilan = $_POST['tabungan'];
         $gaji1 = $gaji + $bonus;
         $potongan = $bpjs + $cicilan + $pinjaman + $lainnya;
         $gajibersih = $gaji1 - $potongan;
+
+        echo" <tr>
+        <td>Cicilan</td>
+        <td>:</td>
+        <td> Rp. " . number_format($cicilan). "</td>
+        </tr>";
+
+        echo" <tr>
+        <td>Infaq</td>
+        <td>:</td>
+        <td> Rp. " . number_format($lainnya). "</td>
+        </tr>";
+
 
         echo "
                 <tr>
